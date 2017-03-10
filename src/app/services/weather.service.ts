@@ -7,7 +7,7 @@ export class WeatherService{
     http:any;
     apiKey: String;
     conditionsUrl:String;
-    constructor(){
+    constructor(http: Http){
         this.http=http;
         this.apiKey = 'd53811291fb21f65';
         this.conditionsUrl ='http://api.wunderground.com/api/'+this.apiKey+'/conditions/q/';
